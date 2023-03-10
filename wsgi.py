@@ -26,8 +26,8 @@ def create_users():
     flask create-users
     > done! created users: <User #1 'admin'> <User #2 'james'>
     """
-    admin = User(username="admin", is_staff=True)
-    james = User(username="james")
+    admin = User(username="admin", is_staff=True, is_active=True)
+    james = User(username="james", is_staff=False, is_active=True)
     db.session.add(admin)
     db.session.add(james)
     db.session.commit()
