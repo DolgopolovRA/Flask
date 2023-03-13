@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% block body %}
 <h1>
     Hello
     {% if current_user.is_authenticated %}
@@ -6,3 +8,4 @@
         anon
     {% endif %}
 </h1>
+{%endblock%}
