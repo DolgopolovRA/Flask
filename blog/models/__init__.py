@@ -7,5 +7,5 @@ __all__ = [
     "User",
     "Author",
     "Article",
-    "Tag"
+    "Tag",
 ]
